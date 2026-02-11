@@ -98,3 +98,9 @@ def test_complete_ui_audit(page: Page):
 
     print("\n[AUDIT COMPLETE]")
     page.pause()
+
+
+    (pytest.main(["-s", "test_complete_ui_audit.py"]))
+    
+    # pytest -s test_complete_ui_audit.py -k "test_complete_ui_audit"   
+    # pytest -s test_complete_ui_audit.py -k "test_complete_ui_audit" --headed
